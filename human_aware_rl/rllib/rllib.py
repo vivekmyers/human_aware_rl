@@ -9,7 +9,7 @@ from ray.tune.logger import UnifiedLogger
 from ray.tune.result import DEFAULT_RESULTS_DIR
 from ray.rllib.env.multi_agent_env import MultiAgentEnv
 from ray.rllib.algorithms.callbacks import DefaultCallbacks
-from ray.rllib.algorithms.ppo.ppo import PPOTrainer
+from ray.rllib.algorithms.ppo.ppo import PPO
 from ray.rllib.models import ModelCatalog
 from human_aware_rl.rllib.utils import softmax, get_base_env, get_mlp, get_required_arguments, iterable_equal
 from datetime import datetime
@@ -549,7 +549,7 @@ def gen_trainer_from_params(params):
     multi_agent_config['policy_mapping_fn'] = select_policy
     multi_agent_config['policies_to_train'] = 'ppo'
 
-    trainer = PPOTrainer(env="overcooked_multi_agent", config={
+    trainer = PPO(env="overcooked_multi_agent", config={
         "multiagent": multi_agent_config,
         "callbacks" : TrainingCallbacks,
         "custom_eval_function" : get_rllib_eval_function(evaluation_params, environment_params['mdp_params'], environment_params['env_params'],
