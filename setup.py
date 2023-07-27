@@ -16,7 +16,12 @@ setup(name='human_aware_rl',
         'numpy',
         'matplotlib',
         'seaborn==0.9.0',
-        'pygame==1.9.5',
-        'ray[rllib]==0.8.5'
+        'pygame',
+        'pillow',
+        'gym',
+        'gymnasium',
+        'protobuf',
+        'tensorflow',
+        'ray[rllib]==1.13.0'
       ],
     )

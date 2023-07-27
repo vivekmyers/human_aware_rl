@@ -4,5 +4,3 @@ pip install -e .
 cd ..
 
 pip install -e .
-
-conda install protobuf

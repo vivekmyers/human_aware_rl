@@ -8,8 +8,8 @@ from ray.tune.registry import register_env
 from ray.tune.logger import UnifiedLogger
 from ray.tune.result import DEFAULT_RESULTS_DIR
 from ray.rllib.env.multi_agent_env import MultiAgentEnv
-from ray.rllib.agents.callbacks import DefaultCallbacks
-from ray.rllib.agents.ppo.ppo import PPOTrainer
+from ray.rllib.algorithms.callbacks import DefaultCallbacks
+from ray.rllib.algorithms.ppo.ppo import PPOTrainer
 from ray.rllib.models import ModelCatalog
 from human_aware_rl.rllib.utils import softmax, get_base_env, get_mlp, get_required_arguments, iterable_equal
 from datetime import datetime
