@@ -22,6 +22,5 @@ setup(name='human_aware_rl',
         'protobuf',
         'tensorflow',
         'ray[rllib]==1.13.0'
-        'ray',
       ],
     )

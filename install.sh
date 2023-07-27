@@ -4,3 +4,4 @@ pip install -e .
 cd ..
 
 pip install -e .
+pip install ray
