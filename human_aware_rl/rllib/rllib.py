@@ -510,7 +510,7 @@ def gen_trainer_from_params(params):
         if policy_type == "ppo":
             config = {
                 "model" : {
-                    "custom_options" : model_params,
+                    "custom_model_config" : model_params,
                     
                     "custom_model" : "MyPPOModel"
                 }
