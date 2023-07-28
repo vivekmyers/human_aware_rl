@@ -13,7 +13,7 @@ class RllibPPOModel(TFModelV2):
         super(RllibPPOModel, self).__init__(obs_space, action_space, num_outputs, model_config, name)
 
         # params we got to pass in from the call to "run"
-        custom_params = model_config["custom_options"]
+        custom_params = model_config["custom_model_config"]
 
 
         ## Parse custom network params
@@ -89,7 +89,7 @@ class RllibLSTMPPOModel(RecurrentTFModelV2):
         super(RllibLSTMPPOModel, self).__init__(obs_space, action_space, num_outputs, model_config, name)
 
         # params we passed in from rllib client
-        custom_params = model_config["custom_options"]
+        custom_params = model_config["custom_model_config"]
 
         ## Parse custom network params
         num_hidden_layers = custom_params["NUM_HIDDEN_LAYERS"]
