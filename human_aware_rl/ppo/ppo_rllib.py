@@ -61,7 +61,7 @@ class RllibPPOModel(TFModelV2):
         value_out = tf.keras.layers.Dense(1)(out)
 
         self.base_model = tf.keras.Model(self.inputs, [layer_out, value_out])
-        self.register_variables(self.base_model.variables)
+        #self.register_variables(self.base_model.variables)
 
 
     def forward(self, input_dict, state=None, seq_lens=None):
