@@ -253,7 +253,7 @@ class OvercookedMultiAgent(MultiAgentEnv):
         infos = { self.curr_agents[0]: info, self.curr_agents[1]: info }
         return obs, rewards, dones, infos
 
-    def reset(self):
+    def reset(self, seed=None, options=None):
         """
         When training on individual maps, we want to randomize which agent is assigned to which
         starting location, in order to make sure that the agents are trained to be able to 
