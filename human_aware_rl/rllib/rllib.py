@@ -511,7 +511,11 @@ def gen_trainer_from_params(params):
             config = {
                 "model" : {
                     "custom_model_config" : model_params,
-                    
+                    "conv_filters": [
+                        [16, [4, 4], 2],
+                        [32, [4, 4], 2],
+                        [256, [11, 11], 1],
+                    ],
                     "custom_model" : "MyPPOModel"
                 }
             }
