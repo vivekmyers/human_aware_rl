@@ -561,7 +561,7 @@ def gen_trainer_from_params(params):
         "custom_eval_function" : get_rllib_eval_function(evaluation_params, environment_params['mdp_params'], environment_params['env_params'],
                                         'ppo', 'ppo' if self_play else 'bc'),
         "env_config" : environment_params,
-        "eager" : False,
+        #"eager" : False,
         **training_params
     }, logger_creator=custom_logger_creator)
 

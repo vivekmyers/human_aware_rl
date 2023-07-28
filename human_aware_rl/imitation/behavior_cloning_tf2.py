@@ -52,7 +52,7 @@ DEFAULT_EVALUATION_PARAMS = {
 }
 
 DEFAULT_BC_PARAMS = {
-    "eager" : True,
+    #"eager" : True,
     "use_lstm" : False,
     "cell_size" : 256,
     "data_params": DEFAULT_DATA_PARAMS,
