@@ -1,6 +1,7 @@
 from ray.rllib.models.tf.tf_modelv2 import TFModelV2
 import numpy as np
 import tensorflow as tf
+from ray.rllib.models.tf.recurrent_tf_modelv2 import RecurrentTFModelV2
 
 
 
