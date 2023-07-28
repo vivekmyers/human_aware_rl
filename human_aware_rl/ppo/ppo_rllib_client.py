@@ -261,7 +261,8 @@ def my_config():
             "reward_shaping_factor" : reward_shaping_factor,
             "reward_shaping_horizon" : reward_shaping_horizon,
             "use_phi" : use_phi,
-            "bc_schedule" : bc_schedule
+            "bc_schedule" : bc_schedule,
+            "policies_to_train": None
         }
     }
 
