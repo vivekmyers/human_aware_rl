@@ -4,8 +4,6 @@ import tensorflow as tf
 from ray.rllib.models.tf import RecurrentNetwork as RecurrentTFModelV2
 
 
-
-
 class RllibPPOModel(TFModelV2):
     """
     Model that will map environment states to action probabilities. Will be shared across agents

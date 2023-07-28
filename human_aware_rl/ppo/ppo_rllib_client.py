@@ -320,7 +320,7 @@ def run(params):
 @ex.automain
 def main(params):
     # All ray environment set-up
-    ray.init(temp_dir=params['temp_dir'])
+    ray.init()#temp_dir=params['temp_dir'])
     register_env("overcooked_multi_agent", _env_creater)
     ModelCatalog.register_custom_model("MyPPOModel", RllibLSTMPPOModel if params['model_params']['use_lstm'] else RllibPPOModel)
 
