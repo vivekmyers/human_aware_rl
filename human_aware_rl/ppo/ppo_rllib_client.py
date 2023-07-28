@@ -235,7 +235,7 @@ def my_config():
         "seed" : seed,
         "evaluation_interval" : evaluation_interval,
         "entropy_coeff" : [(0, entropy_coeff_start), (entropy_coeff_horizon, entropy_coeff_end)],
-        "eager" : eager
+        #"eager" : eager
     }
 
     # To be passed into AgentEvaluator constructor and _evaluate function
