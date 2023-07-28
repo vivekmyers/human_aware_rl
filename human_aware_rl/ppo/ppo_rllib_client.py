@@ -151,7 +151,7 @@ def my_config():
     evaluation_display = False
 
     # Where to log the ray dashboard stats
-    temp_dir = os.path.join(os.path.abspath(os.sep), "tmp", "ray_tmp") if not LOCAL_TESTING else None
+    #temp_dir = os.path.join(os.path.abspath(os.sep), "tmp", "ray_tmp") if not LOCAL_TESTING else None
 
     # Where to store model checkpoints and training stats
     results_dir = DEFAULT_RESULTS_DIR
@@ -285,7 +285,7 @@ def my_config():
         "experiment_name" : experiment_name,
         "save_every" : save_freq,
         "seeds" : seeds,
-        "_temp_dir" : temp_dir,
+        #"temp_dir" : temp_dir,
         "results_dir" : results_dir
     }
 
