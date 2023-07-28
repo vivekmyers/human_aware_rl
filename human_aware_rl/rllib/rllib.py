@@ -170,7 +170,7 @@ class OvercookedMultiAgent(MultiAgentEnv):
         if 'ppo' in self.featurize_fn_map:
             featurize_fn = self.featurize_fn_map['ppo']
             obs_shape = featurize_fn(dummy_state)[0].shape
-            high = np.ones(obs_shape) * max(self.base_env.mdp.soup_cooking_time, self.base_env.mdp.num_items_for_soup, 5)
+            high = np.ones(obs_shape) * max(self.base_env.mdp._cook_time, self.base_env.mdp.num_items_for_soup, 5)
             self.ppo_observation_space = gym.spaces.Box(high * 0, high, dtype=np.float32)
         if 'bc' in self.featurize_fn_map:
             featurize_fn = self.featurize_fn_map['bc']
