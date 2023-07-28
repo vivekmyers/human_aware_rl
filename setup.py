@@ -20,7 +20,7 @@ setup(name='human_aware_rl',
         'pillow',
         'gymnasium',
         'protobuf',
-        'tensorflow',
-        'ray[rllib]'
+        'tensorflow==2.10',
+        'ray[rllib]==2.0.0'
       ],
     )
