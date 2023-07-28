@@ -31,7 +31,7 @@ import ray
 from ray.tune.result import DEFAULT_RESULTS_DIR
 from ray.tune.registry import register_env
 from ray.rllib.models import ModelCatalog
-from ray.rllib.agents.ppo.ppo import PPOTrainer
+from ray.rllib.algorithms.ppo.ppo import PPO
 from human_aware_rl.ppo.ppo_rllib import RllibPPOModel, RllibLSTMPPOModel
 from human_aware_rl.rllib.rllib import OvercookedMultiAgent, save_trainer, gen_trainer_from_params
 from human_aware_rl.imitation.behavior_cloning_tf2 import BehaviorCloningPolicy, BC_SAVE_DIR
