@@ -285,7 +285,7 @@ def my_config():
         "experiment_name" : experiment_name,
         "save_every" : save_freq,
         "seeds" : seeds,
-        #"temp_dir" : temp_dir,
+        "temp_dir" : temp_dir,
         "results_dir" : results_dir
     }
 
@@ -320,7 +320,7 @@ def run(params):
 @ex.automain
 def main(params):
     # All ray environment set-up
-    ray.init()#temp_dir=params['temp_dir'])
+    ray.init(_temp_dir=params['temp_dir'])
     register_env("overcooked_multi_agent", _env_creater)
     ModelCatalog.register_custom_model("MyPPOModel", RllibLSTMPPOModel if params['model_params']['use_lstm'] else RllibPPOModel)
 
