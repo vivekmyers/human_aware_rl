@@ -21,6 +21,6 @@ setup(name='human_aware_rl',
         'gymnasium',
         'protobuf',
         'tensorflow==2.10',
-        'ray[rllib]==2.0.0'
+        'ray[rllib]==0.8.5'
       ],
     )
