@@ -234,7 +234,7 @@ def my_config():
         "num_gpus" : num_gpus,
         "seed" : seed,
         "evaluation_interval" : evaluation_interval,
-        "entropy_coeff" : 0.1,
+        #"entropy_coeff" : 0.1,
         #"eager" : eager
     }
 
