@@ -35,7 +35,7 @@ class RlLibAgent(Agent):
         self.agent_index = agent_index
         self.featurize = featurize_fn
 
-    def reset(self, seed, options):
+    def reset(self, seed=None, options=None):
         # Get initial rnn states and add batch dimension to each
         if hasattr(self.policy.model, 'get_initial_state'):
             self.rnn_state = [np.expand_dims(state, axis=0) for state in self.policy.model.get_initial_state()]
