@@ -285,7 +285,7 @@ def my_config():
         "experiment_name" : experiment_name,
         "save_every" : save_freq,
         "seeds" : seeds,
-        "temp_dir" : temp_dir,
+        #"temp_dir" : temp_dir,
         "results_dir" : results_dir
     }
 
