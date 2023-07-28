@@ -549,7 +549,7 @@ def gen_trainer_from_params(params):
         if agent_id.startswith('bc'):
             return 'bc'
     multi_agent_config['policy_mapping_fn'] = select_policy
-    multi_agent_config['policies_to_train'] = 2 * ['ppo']
+    multi_agent_config['policies_to_train'] = ['ppo']
 
     trainer = PPO(env="overcooked_multi_agent", config={
         "multiagent": multi_agent_config,
