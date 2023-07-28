@@ -270,7 +270,7 @@ def my_config():
         "bc_config" : {
             "model_dir" : bc_model_dir,
             "stochastic" : bc_stochastic,
-            "eager" : eager
+            #"eager" : eager
         }
     }
 
